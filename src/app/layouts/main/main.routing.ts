@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { MainHomeComponent } from './main-home/main-home.component';
 import { MainComponent } from './main.component';
 
 export const MainRoutes: Routes = [
@@ -13,7 +14,12 @@ export const MainRoutes: Routes = [
         //     (m) => m.RegistrationModule
         //   ),
       },
+      {
+        path: '**',
+        component: MainHomeComponent,
+      },
      
     ],
   },
+
 ];
