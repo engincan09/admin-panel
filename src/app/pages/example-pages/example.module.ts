@@ -6,11 +6,13 @@ import { RouterModule } from '@angular/router';
 import { ExampleRoutes } from './example.routing';
 
 @NgModule({
-  declarations: [ExampleListComponent],
+  declarations: [
+    ExampleListComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(ExampleRoutes),
     DashboardLayoutModule,
   ],
 })
-export class ExampleModule {}
+export class ExampleModule { }

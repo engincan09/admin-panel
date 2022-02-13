@@ -9,5 +9,4 @@ export const ExampleRoutes: Routes = [
     // canActivate: [AuthGuardService],
     component: ExampleListComponent,
   },
- 
 ];

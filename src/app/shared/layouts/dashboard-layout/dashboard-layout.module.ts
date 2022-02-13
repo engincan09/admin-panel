@@ -1,10 +1,10 @@
-import { FooterComponent } from './footer/footer.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+
+import { SharedModule } from '../../shared.module';
 import { DashboardLayoutComponent } from './dashboard-layout.component';
-import { RouterModule } from '@angular/router';
+import { FooterComponent } from './footer/footer.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
     TopBarComponent,
     FooterComponent
   ],
-  imports: [FormsModule, RouterModule, ],
+  imports: [SharedModule],
   exports: [DashboardLayoutComponent, SideBarComponent],
 })
-export class DashboardLayoutModule {}
+export class DashboardLayoutModule { }
