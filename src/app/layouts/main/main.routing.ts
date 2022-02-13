@@ -8,11 +8,11 @@ export const MainRoutes: Routes = [
     component: MainComponent,
     children: [
       {
-        path: 'genel',
-        // loadChildren: () =>
-        //   import('../../modules/registration/registration.module').then(
-        //     (m) => m.RegistrationModule
-        //   ),
+        path: 'example',
+        loadChildren: () =>
+          import('../../pages/example-pages/example.module').then(
+            (m) => m.ExampleModule
+          ),
       },
       {
         path: '**',
