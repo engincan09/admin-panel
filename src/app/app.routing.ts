@@ -4,6 +4,11 @@ import { LoginComponent } from './layouts/login/login.component';
 
 export const AppRoutes: Routes = [
   {
+    path: '',
+    loadChildren: () =>
+      import('./layouts/main/main.module').then((m) => m.MainModule),
+  },
+  {
     path: 'yonetim',
     loadChildren: () =>
       import('./layouts/main/main.module').then((m) => m.MainModule),
