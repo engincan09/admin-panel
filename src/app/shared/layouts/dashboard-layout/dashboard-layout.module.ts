@@ -1,3 +1,4 @@
+import { FooterComponent } from './footer/footer.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { NgModule } from '@angular/core';
@@ -9,7 +10,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     SideBarComponent,
     DashboardLayoutComponent,
-    TopBarComponent
+    TopBarComponent,
+    FooterComponent
   ],
   imports: [FormsModule, RouterModule, ],
   exports: [DashboardLayoutComponent, SideBarComponent],
