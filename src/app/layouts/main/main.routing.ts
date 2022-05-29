@@ -9,10 +9,10 @@ export const MainRoutes: Routes = [
     component: MainComponent,
     children: [
       {
-        path: 'example',
+        path: 'idari-isler',
         loadChildren: () =>
-          import('../../pages/example-pages/example.module').then(
-            (m) => m.ExampleModule
+          import('../../modules/registration/registration.module').then(
+            (m) => m.RegistrationModule
           ),
       },
       {
